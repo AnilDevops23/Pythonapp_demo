@@ -21,7 +21,7 @@ pipeline {
                 script{
                     sh '''
                     echo 'Push to Repo'
-                    docker push anildevops23/pythonapp:${BUILD_NUMBER}
+                    docker push docker.io/anildevops23/pythonapp:${BUILD_NUMBER}
                     '''
                 }
             }
