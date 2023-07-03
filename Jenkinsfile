@@ -21,9 +21,8 @@ pipeline {
                 script{
                     sh '''
                     echo 'Push to Repo'
-                    withDockerRegistry(credentialsId: 'dockerhub', url: 'https://registry.hub.docker.com') {
+                    withDockerRegistry(credentialsId: 'dockerhub', url: 'https://registry.hub.docker.com') 
                     docker push docker.io/anildevops23/pythonapp:${BUILD_NUMBER}
-                    }
                     '''
                 }
             }
