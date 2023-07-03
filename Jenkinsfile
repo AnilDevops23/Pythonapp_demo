@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-maven:maven3
-    }
     stages {
         stage('Checkout the code from SCM') {
             steps {
