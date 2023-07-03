@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout the code from SCM') {
             steps {
-               git branch: 'main', url: 'https://github.com/AnilDevops23/Pythonapp_demo.git'
+               git branch: 'main', url: 'git@github.com:AnilDevops23/Pythonapp_demo.git'
             }
         }
     }
